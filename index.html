@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Totally Corvette Trivia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+ </head>
+
+<body> 
+	<div class="container">
+    <div class="row">
+        <div class="col-lg-3">      
+
+        </div>
+        <div class="col-lg-7">
+          <h1 id="Title">Totally Corvette Triva!</h1>
+        </div>
+        <div class="col-lg-2">
+
+        </div>
+    </div>
+
+    <div class="row" id="startRow">
+        <div class="col-lg-4">      
+
+        </div>
+        <div class="col-lg-4">
+          <button id="Start">Start</button>
+        </div>
+        <div class="col-lg-4">
+
+        </div>
+    </div>
+
+    <div class="row" id="showNumber">
+        <div class="col-lg-4">      
+
+        </div>
+
+        <div class="col-md-4">
+           <div id="timeLeft"></div>
+        </div>
+
+        <div class="col-lg-4">
+  
+        </div>
+    </div>
+
+    <div class="row" id="data">
+        <div class="col-lg-1">      
+
+        </div>
+        <div class="col-lg-10" id="questions">
+          <form name="triviaGame" id="triviaGame">
+            1. What was the only yr that had a split in the rear window?
+            <br>
+            <input type="radio" name="q1" id="q11" value="1970">1970</li>
+            <br>
+            <input type="radio" name="q1" id="q12" value="1959">1959</li>
+            <br>
+            <input type="radio" name="q1" id="q13" value="1963">1963</li>
+            <br>
+            <input type="radio" name="q1" id="q14" value="1968">1968</li>
+            <br>
+            2. What was the first year of production?
+            <br>
+            <input type="radio" name="q2" id="q21" value="1955">1955</li>
+            <br>
+            <input type="radio" name="q2" id="q22" value="1953">1953</li>
+            <br>
+            <input type="radio" name="q2" id="q23" value="1961">1961</li>
+            <br>
+            <input type="radio" name="q2" id="q24" value="1958">1958</li>
+            <br>
+            3. What year was a PaceCar and SilverAnniversary edition produced?
+            <br>
+            <input type="radio" name="q3" id="q31" value="1973">1973</li>
+            <br>
+            <input type="radio" name="q3" id="q32" value="1982">1982</li>
+            <br>
+            <input type="radio" name="q3" id="q33" value="1979">1979</li>
+            <br>
+            <input type="radio" name="q3" id="q34" value="1978">1978</li>
+            <br>
+            4. What year was a rubber front and chrome rear bumper used?
+            <br>
+            <input type="radio" name="q4" id="q41" value="1966">1966</li>
+            <br>
+            <input type="radio" name="q4" id="q42" value="1970">1970</li>
+            <br>
+            <input type="radio" name="q4" id="q43" value="1974">1974</li>
+            <br>
+            <input type="radio" name="q4" id="q44" value="1973">1973</li>
+            <br>
+            5. What was the final year for the convertible before it returned in 86?
+            <br>
+            <input type="radio" name="q5" id="q51" value="1979">1979</li>
+            <br>
+            <input type="radio" name="q5" id="q52" value="1974">1974</li>
+            <br>
+            <input type="radio" name="q5" id="q53" value="1975">1975</li>
+            <br>
+            <input type="radio" name="q5" id="q54" value="1977">1977</li>
+            <br>
+            6. What year, since production started, were they not produced?
+            <br>
+            <input type="radio" name="q6" id="q61" value="1983">1983</li>
+            <br>
+            <input type="radio" name="q6" id="q62" value="1990">1990</li>
+            <br>
+            <input type="radio" name="q6" id="q63" value="1972">1972</li>
+            <br>
+            <input type="radio" name="q6" id="q64" value="1979">1979</li>
+            <br>
+            7. What was the official nickname for the only motor used in the 53 model?
+            <br>
+            <input type="radio" name="q7" id="q71" value="Crossfire">Crossfire</li>
+            <br>
+            <input type="radio" name="q7" id="q72" value="BlueFlame">"BlueFlame</li>
+            <br>
+            <input type="radio" name="q7" id="q73" value="ZR1">ZR1</li>
+            <br>
+            <input type="radio" name="q7" id="q74" value="Mako">Mako</li>
+            <br>
+            8. How many 1982 Collector Edition were built?
+            <br>
+            <input type="radio" name="q8" id="q81" value="6759">6,759</li>
+            <br>
+            <input type="radio" name="q8" id="q82" value="13213">13,213</li>
+            <br>
+            <input type="radio" name="q8" id="q83" value="7980">7,980</li>
+            <br>
+            <input type="radio" name="q8" id="q84" value="9546">9,546</li>
+            <br>
+            9. How many eras(major change classification) are there?
+            <br>
+            <input type="radio" name="q9" id="q91" value="5">5</li>
+            <br>
+            <input type="radio" name="q9" id="q92" value="8">8</li>
+            <br>
+            <input type="radio" name="q9" id="q93" value="6">6</li>
+            <br>
+            <input type="radio" name="q9" id="q94" value="7">7</li>
+            <br>
+            10. How many cubic inches was the first small box chevy?
+            <br>
+            <input type="radio" name="q10" id="q101" value="307">307</li>
+            <br>
+            <input type="radio" name="q10" id="q102" value="283">283</li>
+            <br>
+            <input type="radio" name="q10" id="q103" value="265">265</li>
+            <br>
+            <input type="radio" name="q10" id="q104" value="305">305</li>           
+            <br>
+          </form>
+        </div>
+        <div class="col-lg-1">
+  
+        </div>
+    </div>
+    <br>
+     <div class="row" id="doneButton">
+        <div class="col-lg-4">      
+
+        </div>
+
+        <div class="col-md-4">
+            <button id="Done">Done</button>
+        </div>
+
+        <div class="col-lg-4">
+  
+        </div>
+    </div>
+    <br>
+     <div class="row" id="AllDone">
+        <div class="col-lg-3">      
+
+        </div>
+
+        <div class="col-sm-6" id="allDone">
+           <h3>All Done!</h5>
+        </div>
+
+        <div class="col-lg-3">
+  
+        </div>
+    </div>
+     <div class="row">
+        <div class="col-lg-3">      
+
+        </div>
+
+        <div class="col-sm-6" id="correct2">
+           <h5>Correct answers: <span id="correct"> </span></h5>
+        </div>
+
+        <div class="col-lg-3">
+  
+        </div>
+    </div>
+     <div class="row">
+        <div class="col-lg-3">      
+
+        </div>
+
+        <div class="col-sm-6" id="incorrect2">
+            <h5>Incorrect answers: <span id="incorrect"> </span></h5>
+        </div>
+
+        <div class="col-lg-3">
+  
+        </div>
+    </div>
+     <div class="row">
+        <div class="col-lg-3">      
+
+        </div>
+        <div class="col-sm-6" id="unanswered2">
+            <h5>Unanswered: <span id="unanswered"> </span></h5>
+        </div>
+
+        <div class="col-lg-3">
+  
+        </div>
+    </div>
+
+  </div>
+</body>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/app.js"</script>
+<script>
+$(document).ready(function() {
+            
+});
+</script>
+</script>
+</script>
+
+</html>
