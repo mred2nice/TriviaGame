@@ -83,3 +83,7 @@ body
   	font-style: bold;
  	display: none;
  }
+
+#showNumber {
+  display: none;
+ }

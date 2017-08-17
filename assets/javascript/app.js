@@ -70,13 +70,16 @@
       $("#correct").html(correct);
       $("#incorrect").html(incorrect);
       $("#unanswered").html(unanswered);
-      var y = document.getElementById("questions");
-      var z = document.getElementById("Done");
-      var e = document.getElementById("timeLeft");
-      var i = document.getElementById("allDone");
-      var f = document.getElementById("correct2");
-      var g = document.getElementById("incorrect2");
-      var h = document.getElementById("unanswered2");
+      //*********************************************************************************************************
+      //remove time remaining,questions and done button then show AllDone and correct/incorrect/unanswered totals
+      //*********************************************************************************************************
+      var y = $("#questions")[0];
+      var z = $("#Done")[0];
+      var e = $("#timeLeft")[0];
+      var i = $("#allDone")[0];
+      var f = $("#correct2")[0];
+      var g = $("#incorrect2")[0];
+      var h = $("#unanswered2")[0];
       y.style.display = 'none';
       z.style.display = 'none';
       e.style.display = 'none';
@@ -87,10 +90,15 @@
   }
 
   function myFunction() {
-    var x = document.getElementById("Start");
-    var y = document.getElementById("questions");
-    var z = document.getElementById("Done");
+    //*********************************************************************
+    //remove Start button and show time remaining,questions and done button
+    //*********************************************************************
+    var x = $("#Start")[0];
+    var y = $("#questions")[0];
+    var z = $("#Done")[0];
+    var t = $("#showNumber")[0];
     x.style.display = 'none';
+    t.style.display = 'block';
     y.style.display = 'block';
     z.style.display = 'block';
   }
