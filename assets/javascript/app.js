@@ -1,7 +1,7 @@
   $("#Start").on("click", run);
   $("#Done").on("click", stop);
 
-  var number = 15;
+  var number = 99;
   var intervalId;
   var correct = 0;
   var incorrect = 0;
@@ -48,7 +48,8 @@
             //radio button selected...check if right answer
             //*********************************************
             var userAnswer = $('input[id=' + name + ']:checked').val();
-            if (userAnswer=correctAnswer) {
+            console.log(correctAnswer + " " + userAnswer);
+            if (userAnswer==correctAnswer) {
               correct++;
               x=5;
             } else {
@@ -73,7 +74,7 @@
       //*********************************************************************************************************
       //remove time remaining,questions and done button then show AllDone and correct/incorrect/unanswered totals
       //*********************************************************************************************************
-      var y = $("#questions")[0];
+      /*var y = $("#questions")[0];
       var z = $("#Done")[0];
       var e = $("#timeLeft")[0];
       var i = $("#allDone")[0];
@@ -86,14 +87,38 @@
       i.style.display = 'block';
       f.style.display = 'block';
       g.style.display = 'block';
-      h.style.display = 'block';
+      h.style.display = 'block';*/
+
+      var questionsForm = $("#questions")[0];
+      var doneButton = $("#Done")[0];
+      var timeLeft = $("#timeLeft")[0];
+      var allDone = $("#allDone")[0];
+      var numCorrect = $("#correct2")[0];
+      var numIncorrect = $("#incorrect2")[0];
+      var numUnanswered = $("#unanswered2")[0];
+      questionsForm.style.display = 'none';
+      doneButton.style.display = 'none';
+      timeLeft.style.display = 'none';
+      allDone.style.display = 'block';
+      numCorrect.style.display = 'block';
+      numIncorrect.style.display = 'block';
+      numUnanswered.style.display = 'block';
   }
 
   function myFunction() {
     //*********************************************************************
     //remove Start button and show time remaining,questions and done button
     //*********************************************************************
-    var x = $("#Start")[0];
+    /*var x = $("#startRow")[0];
+    var y = $("#questions")[0];
+    var z = $("#Done")[0];
+    var t = $("#showNumber")[0];
+    x.style.display = 'none';
+    t.style.display = 'block';
+    y.style.display = 'block';
+    z.style.display = 'block';*/                        
+
+     var x = $("#startRow")[0];
     var y = $("#questions")[0];
     var z = $("#Done")[0];
     var t = $("#showNumber")[0];
